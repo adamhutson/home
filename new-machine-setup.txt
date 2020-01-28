@@ -1,0 +1,29 @@
+For MacOS:
+1. Install Brew:
+    a. Download & Install XCODE from AppStore
+    b. Download & Install Command Line Developer Tools from dmg
+        https://developer.apple.com/download/more/?=for%20Xcode
+    c. /usr/bin/ruby -e "$(curl -fsS: https://raw.githubusercontent.com/Homebrew/install/master/install)"
+        (Enter password A LOT)
+2. Install Git:
+    a. brew install git
+3. Install Hashicorp tools:
+    a. brew install packer
+    b. brew install consul
+    c. brew install terraform
+    d. brew install ansible
+4. Install AWS CLI:
+    a. brew install awscli
+5. Install wget:
+    a. brew install wget
+6. Install Docker:
+    a. Login, Download, & Install dmg from https://www.docker.com/products/docker-desktop
+7. Install VSCode:
+    a. Download zip from https://code.visualstudio.com/download
+    b. Move unzipped VSCode application to Applications folder
+    c. Install 'code' command in PATH by running following in terminal & restart terminal:
+
+cat << EOF >> ~/.bash_profile
+# Add Visual Studio Code (code)
+export PATH="\$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+EOF
