@@ -18,12 +18,23 @@ For MacOS:
     a. brew install wget
 6. Install Docker:
     a. Login, Download, & Install dmg from https://www.docker.com/products/docker-desktop
-7. Install VSCode:
+7. Install Bash if on Big Sur (Apple dropped support for bash)
+    a. brew install bash
+    b. Silence Apple's warning by running following in termincal:
+
+cat << EOF >> ~/.bash_profile
+# Silence Apple's warning to use zsh
+export BASH_SILENCE_DEPRECATION_WARNING=1
+EOF
+exec bash -l
+    
+8. Install VSCode:
     a. Download zip from https://code.visualstudio.com/download
     b. Move unzipped VSCode application to Applications folder
-    c. Install 'code' command in PATH by running following in terminal & restart terminal:
+    c. Install 'code' command in PATH by running following in terminal:
 
 cat << EOF >> ~/.bash_profile
 # Add Visual Studio Code (code)
 export PATH="\$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 EOF
+exec bash -l
