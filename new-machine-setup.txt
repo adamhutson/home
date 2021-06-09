@@ -1,42 +1,80 @@
 For MacOS:
-1. Install Brew:
-    a. Download & Install XCODE from AppStore
-    b. Download & Install Command Line Developer Tools from dmg
-        https://developer.apple.com/download/more/?=for%20Xcode
-    c. /usr/bin/ruby -e "$(curl -fsS: https://raw.githubusercontent.com/Homebrew/install/master/install)"
-        (Enter password A LOT)
-2. Install Git:
-    a. brew install git
-3. Install Hashicorp tools:
-    a. brew install packer
-    b. brew install consul
-    c. brew install terraform
-    d. brew install ansible
-4. Install AWS CLI:
-    a. brew install awscli
-5. Install Google CLI:
-    a. brew install --cask google-cloud-sdk
-6. Install wget:
-    a. brew install wget
-7. Install Docker:
-    a. Login, Download, & Install dmg from https://www.docker.com/products/docker-desktop
-8. Install Bash if on Big Sur (Apple dropped support for bash)
-    a. brew install bash
-    b. Silence Apple's warning by running following in termincal:
 
+Install HomeBrew (https://brew.sh):
+    * Download & Install XCODE from AppStore
+    * Download & Install Command Line Developer Tools from dmg
+        https://developer.apple.com/download/more/?=for%20Xcode
+    * /usr/bin/ruby -e "$(curl -fsS: https://raw.githubusercontent.com/Homebrew/install/master/install)"
+        (Enter password A LOT)
+
+Install Git:
+    * brew install git
+
+Install Hashicorp tools:
+    * brew install packer
+    * brew install consul
+    * brew install terraform
+    * brew install ansible
+
+Install AWS CLI:
+    * brew install awscli
+
+Install Google CLI:
+    * brew install --cask google-cloud-sdk
+
+Install wget:
+    * brew install wget
+
+Install Docker:
+    * Login, Download, & Install dmg from https://www.docker.com/products/docker-desktop
+
+Install Bash if on Big Sur (Apple dropped support for bash)
+    * brew install bash
+    * Silence Apple's warning by running following in termincal:
 cat << EOF >> ~/.bash_profile
 # Silence Apple's warning to use zsh
 export BASH_SILENCE_DEPRECATION_WARNING=1
 EOF
 exec bash -l
     
-9. Install VSCode:
-    a. Download zip from https://code.visualstudio.com/download
-    b. Move unzipped VSCode application to Applications folder
-    c. Install 'code' command in PATH by running following in terminal:
-
+Install VSCode:
+    * Download zip from https://code.visualstudio.com/download
+    * Move unzipped VSCode application to Applications folder
+    * Install 'code' command in PATH by running following in terminal:
 cat << EOF >> ~/.bash_profile
 # Add Visual Studio Code (code)
 export PATH="\$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+EOF
+exec bash -l
+
+Install Multiple Javas:
+    * brew tap homebrew/cask-versions   # tap versions cask
+    * brew tap adoptopenjdk/openjdk   # tap adoptoepnjdk cask
+    * brew search --cask jdk   # search for available jdk casks
+    * brew install adoptopenjdk11     # install java 11 lts
+    * brew install adoptopenjdk/openjdk/adoptopenjdk8 # install java 8 lts
+    * ls /Library/Java/JavaVirtualMachines   # multiple jdks installed here
+    * brew install  jenv
+    * echo 'export PATH="$HOME/.jenv/bin:$PATH"' >> ~/.bash_profile
+    * echo 'eval "$(jenv init -)"' >> ~/.bash_profile
+    * unset JAVA_TOOL_OPTIONS
+    * exec bash -l
+    * jenv add /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home
+    * jenv add /Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home
+    * jenv versions
+    * jenv enable-plugin export
+    * jenv local 1.8
+    * echo $JAVA_HOME
+    * javac -version
+
+    * Switch between javas via JAVA_HOME env var by running following in terminal:
+cat << EOF >> ~/.bash_profile
+# Set JAVA_*_HOME's
+export JAVA_8_HOME=$(/usr/libexec/java_home -v1.8)
+export JAVA_11_HOME=$(/usr/libexec/java_home -v11)
+alias java8='export JAVA_HOME=$JAVA_8_HOME'
+alias java11='export JAVA_HOME=$JAVA_11_HOME'
+# Default to Java 8
+java8
 EOF
 exec bash -l
