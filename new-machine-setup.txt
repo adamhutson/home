@@ -14,11 +14,13 @@ For MacOS:
     d. brew install ansible
 4. Install AWS CLI:
     a. brew install awscli
-5. Install wget:
+5. Install Google CLI:
+    a. brew install --cask google-cloud-sdk
+6. Install wget:
     a. brew install wget
-6. Install Docker:
+7. Install Docker:
     a. Login, Download, & Install dmg from https://www.docker.com/products/docker-desktop
-7. Install Bash if on Big Sur (Apple dropped support for bash)
+8. Install Bash if on Big Sur (Apple dropped support for bash)
     a. brew install bash
     b. Silence Apple's warning by running following in termincal:
 
@@ -28,7 +30,7 @@ export BASH_SILENCE_DEPRECATION_WARNING=1
 EOF
 exec bash -l
     
-8. Install VSCode:
+9. Install VSCode:
     a. Download zip from https://code.visualstudio.com/download
     b. Move unzipped VSCode application to Applications folder
     c. Install 'code' command in PATH by running following in terminal:
