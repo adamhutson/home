@@ -67,3 +67,6 @@ Install Multiple Javas:
     * jenv global 1.8
     * echo $JAVA_HOME
     * javac -version
+
+Install Maven:
+   * brew install maven
