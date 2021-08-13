@@ -70,3 +70,7 @@ Install Multiple Javas:
 
 Install Maven:
    * brew install maven
+
+Install Helm:
+   * brew install helm
+   * helm plugin install https://github.com/databus23/helm-diff
