@@ -1,11 +1,18 @@
 For MacOS:
 
-Install HomeBrew (https://brew.sh):
+Install XCode:
     * Download & Install XCODE from AppStore
     * Download & Install Command Line Developer Tools from dmg
         https://developer.apple.com/download/more/?=for%20Xcode
+
+Install HomeBrew (https://brew.sh):
     * /usr/bin/ruby -e "$(curl -fsS: https://raw.githubusercontent.com/Homebrew/install/master/install)"
         (Enter password A LOT)
+   OR:
+   * Add following line to ~/.zprofile:
+      eval "$(/opt/homebrew/bin/brew shellenv)"
+   * source ~./zprofile
+   * brew doctor
 
 Install Git:
     * brew install git
