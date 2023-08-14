@@ -36,27 +36,14 @@ Install wget:
 
 Install Docker:
     * Login, Download, & Install dmg from https://www.docker.com/products/docker-desktop
-
-Install Bash if on > Catalina (Apple dropped support for bash) & set as default over zsh
-    * brew install bash
-    * chsh -s /bin/bash
-    * Silence Apple's warning by running following in termincal:
-cat << EOF >> ~/.bash_profile
-# Silence Apple's warning to use zsh
-export BASH_SILENCE_DEPRECATION_WARNING=1
-EOF
-exec bash -l
     
 Install VSCode:
     * Download zip from https://code.visualstudio.com/download
     * Move unzipped VSCode application to Applications folder
     * Install 'code' command in PATH by running following in terminal:
-cat << EOF >> ~/.bash_profile
-# Add Visual Studio Code (code)
-export PATH="\$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
-EOF
-exec bash -l
-
+         Open Code, Open command palette (click Command + Shift + P)
+         Type shell and hit enter, viola
+         
 Install Multiple Javas:
     * brew tap homebrew/cask-versions   # tap versions cask
     * brew tap adoptopenjdk/openjdk   # tap adoptoepnjdk cask
