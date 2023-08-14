@@ -80,6 +80,7 @@ Install Multiple Javas:
 Install Maven:
    * brew install maven
 
-Install Helm:
+Install K8s/Helm:
+   * brew install kubectl
    * brew install helm
    * helm plugin install https://github.com/databus23/helm-diff
