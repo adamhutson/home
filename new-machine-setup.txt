@@ -16,6 +16,9 @@ Verify Brew is ready:
 Install Git:
     * brew install git
 
+Install OhMyZsh:
+   * sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
 Install Hashicorp tools:
     * brew install packer
     * brew install consul
