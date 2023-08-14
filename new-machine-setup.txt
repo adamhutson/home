@@ -43,7 +43,12 @@ Install VSCode:
     * Install 'code' command in PATH by running following in terminal:
          Open Code, Open command palette (click Command + Shift + P)
          Type shell and hit enter, viola
-         
+
+Install Golang:
+   * Download Golang package file from https://go.dev/dl/
+   * Restart terminal (close/re-open terminal window)
+   * go version
+
 Install Multiple Javas:
     * brew tap homebrew/cask-versions   # tap versions cask
     * brew tap adoptopenjdk/openjdk   # tap adoptoepnjdk cask
