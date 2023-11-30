@@ -31,6 +31,9 @@ Install AWS CLI:
 Install Google CLI:
     * brew install --cask google-cloud-sdk
 
+Install Azure CLI:
+   * brew install azure-cli
+
 Install wget:
     * brew install wget
 
