@@ -88,3 +88,6 @@ Install K8s/Helm:
    * brew install kubectl
    * brew install helm
    * helm plugin install https://github.com/databus23/helm-diff
+
+Install Openshift
+   * brew install openshift-cli
