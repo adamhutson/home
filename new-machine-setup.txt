@@ -84,6 +84,11 @@ Install Java 17:
       (https://download.oracle.com/java/17/latest/jdk-17_macos-aarch64_bin.dmg)
    * java -version
 
+Install Quarkus:
+   * curl -Ls https://sh.jbang.dev | bash -s - trust add https://repo1.maven.org/maven2/io/quarkus/quarkus-cli/
+   * curl -Ls https://sh.jbang.dev | bash -s - app install --fresh --force quarkus@quarkusio
+   (restart terminal)
+
 Install IntelliJ IDE:
    * Download from jetbrains.com/idea/download/
 
