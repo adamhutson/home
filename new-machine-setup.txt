@@ -72,6 +72,12 @@ Install Multiple Javas:
     * echo $JAVA_HOME
     * javac -version
 
+Install Zulu Java:
+   * brew install --cask zulu
+
+Install Gradle:
+   * brew install gradle
+
 Install Java 17:
    * Download latest Java 17 SE from oracle.com/java/technologies (Java SE 17.0.8 (LTS)
       ARM64 is for MacOS with Apple processor; choose the DMG Installer
