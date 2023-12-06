@@ -25,6 +25,9 @@ Install Hashicorp tools:
     * brew install terraform
     * brew install ansible
 
+Install Pulumi:
+   * brew install pulumi/tap/pulumi
+
 Install AWS CLI:
     * brew install awscli
 
