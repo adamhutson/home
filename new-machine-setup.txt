@@ -1,5 +1,9 @@
 For MacOS:
 
+Install Rectangle app:
+   * Download & Install Rectangle
+      https://rectangleapp.com/
+
 Install XCode:
     * Download & Install XCODE from AppStore
     * Download & Install Command Line Developer Tools from dmg
