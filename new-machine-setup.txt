@@ -22,6 +22,11 @@ Verify Brew is ready:
 
 Install Git:
     * brew install git
+    * Install Git Credential Manager
+        https://github.com/git-ecosystem/git-credential-manager/blob/main/README.md
+        brew install --cask git-credential-manager
+    * Create Personal Access Token
+    * When you clone a repo, the GCM will ask you to log in; use the token
 
 Install OhMyZsh:
    * sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
