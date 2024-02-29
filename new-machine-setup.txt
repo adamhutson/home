@@ -1,5 +1,8 @@
 For MacOS:
 
+If Apple Silicon:
+  * softwareupdate --install-rosetta
+
 Install Rectangle app:
    * Download & Install Rectangle
       https://rectangleapp.com/
