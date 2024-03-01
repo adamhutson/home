@@ -117,3 +117,6 @@ Install K8s/Helm:
 
 Install Openshift
    * brew install openshift-cli
+
+Install Tree
+   * brew install tree
